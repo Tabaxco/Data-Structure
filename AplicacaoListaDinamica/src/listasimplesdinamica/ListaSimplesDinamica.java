@@ -29,4 +29,10 @@ public class ListaSimplesDinamica {
         temp.setProximo(aux);
 
     }
+
+    public void insereListaInicio(double valor) {
+        Node aux = new Node (valor);
+        aux.setProximo(this.inicio);
+        this.inicio = aux;
+    }
 }
